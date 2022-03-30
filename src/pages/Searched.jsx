@@ -32,7 +32,6 @@ function Searched() {
             </Link>
           </div>
         )
-        
       })}
     </div>
   );
