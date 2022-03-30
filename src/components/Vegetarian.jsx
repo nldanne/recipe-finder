@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
+import { Link } from 'react-router-dom';
 
 import Card from './Card.jsx';
 
@@ -45,7 +46,9 @@ function Vegetarian() {
           {vegetarian.map((recipe) => {
             return (
               <SplideSlide key={recipe.id}>
-                <Card recipe={recipe}/>
+                <Link to={`/recipe/${recipe.id}`}>
+                  <Card recipe={recipe}/>
+                </Link>
               </SplideSlide>
             );
           })}
