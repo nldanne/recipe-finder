@@ -1,0 +1,60 @@
+.detail-wrapper {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  display: flex;
+}
+
+.detail-wrapper h2 {
+  margin-bottom: 2rem;
+  word-wrap: break-word;
+}
+
+.detail-wrapper li {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+
+.detail-wrapper ul {
+  margin-top: 2rem;
+}
+
+.detail-wrapper img {
+  width: 320px;
+}
+
+.image-title__container {
+  width: 350px;
+}
+
+.btn-recipe {
+  padding: 8px 15px;
+  background-color: white;
+  color: #313131;
+  border: 2px solid black;
+  margin-right: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-recipe:hover {
+  opacity: 0.8;
+}
+
+.active {
+  background: linear-gradient(35deg, #494949, #313131);
+  color: white;
+}
+
+.info {
+  margin-left: 5rem;
+}
+
+.instruction {
+  margin-top: 2rem;
+  width: 600px;
+}
+
+.instruction p {
+  line-height: 1.6rem;
+  margin-top: 2rem;
+}
