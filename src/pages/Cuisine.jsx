@@ -22,16 +22,24 @@ function Cuisine() {
   };
 
   return (
-    <div className='grid'>
+    <motion.div 
+      className='grid'
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+    >
       {cuisine.map((item) => {
         return (
           <div className='grid-card' key={item.id}>
-            <img src={item.image} alt={item.title} className='grid-card__img'></img>
-            <h4 className='gird-card__title' >{item.title}</h4>
+            <Link to={`/recipe/${item.id}`}>
+              <img src={item.image} alt={item.title} className='grid-card__img'></img>
+              <h4 className='gird-card__title' >{item.title}</h4>
+            </Link>
           </div>
         );
       })}
-    </div>
+    </motion.div>
   );
 }
 
